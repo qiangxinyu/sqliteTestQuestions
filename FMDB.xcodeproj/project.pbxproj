@@ -13,6 +13,11 @@
 		184395371D196F3600BD7EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184395351D196F3600BD7EF5 /* Main.storyboard */; };
 		184395391D196F3600BD7EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184395381D196F3600BD7EF5 /* Assets.xcassets */; };
 		1843953C1D196F3600BD7EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1843953A1D196F3600BD7EF5 /* LaunchScreen.storyboard */; };
+		184395461D196F8100BD7EF5 /* SqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 184395451D196F8100BD7EF5 /* SqliteManager.m */; };
+		1843954B1D19772400BD7EF5 /* jxedt_user.db in Resources */ = {isa = PBXBuildFile; fileRef = 1843954A1D19772400BD7EF5 /* jxedt_user.db */; };
+		1843954E1D1977DF00BD7EF5 /* TestQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843954D1D1977DF00BD7EF5 /* TestQuestions.m */; };
+		184395551D1981CA00BD7EF5 /* NSObject+sqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 184395541D1981CA00BD7EF5 /* NSObject+sqlite.m */; };
+		250C30DA0597130386D855CB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864167C960A6605A92EE8899 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		184395381D196F3600BD7EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1843953B1D196F3600BD7EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1843953D1D196F3600BD7EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184395441D196F8100BD7EF5 /* SqliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteManager.h; sourceTree = "<group>"; };
+		184395451D196F8100BD7EF5 /* SqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteManager.m; sourceTree = "<group>"; };
+		1843954A1D19772400BD7EF5 /* jxedt_user.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = jxedt_user.db; sourceTree = "<group>"; };
+		1843954C1D1977DF00BD7EF5 /* TestQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuestions.h; sourceTree = "<group>"; };
+		1843954D1D1977DF00BD7EF5 /* TestQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQuestions.m; sourceTree = "<group>"; };
+		184395531D1981CA00BD7EF5 /* NSObject+sqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+sqlite.h"; sourceTree = "<group>"; };
+		184395541D1981CA00BD7EF5 /* NSObject+sqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+sqlite.m"; sourceTree = "<group>"; };
+		18841AA4789A1E53C1F20DF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		565999ED849756369A79E785 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		864167C960A6605A92EE8899 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250C30DA0597130386D855CB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +58,11 @@
 		184395201D196F3600BD7EF5 = {
 			isa = PBXGroup;
 			children = (
+				1843954A1D19772400BD7EF5 /* jxedt_user.db */,
 				1843952B1D196F3600BD7EF5 /* FMDB */,
 				1843952A1D196F3600BD7EF5 /* Products */,
+				B4D3ED5A9F502AB733C5C615 /* Pods */,
+				80418DF14CF3D6055CCE39C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,12 @@
 				184395301D196F3600BD7EF5 /* AppDelegate.m */,
 				184395321D196F3600BD7EF5 /* ViewController.h */,
 				184395331D196F3600BD7EF5 /* ViewController.m */,
+				184395441D196F8100BD7EF5 /* SqliteManager.h */,
+				184395451D196F8100BD7EF5 /* SqliteManager.m */,
+				1843954C1D1977DF00BD7EF5 /* TestQuestions.h */,
+				1843954D1D1977DF00BD7EF5 /* TestQuestions.m */,
+				184395531D1981CA00BD7EF5 /* NSObject+sqlite.h */,
+				184395541D1981CA00BD7EF5 /* NSObject+sqlite.m */,
 				184395351D196F3600BD7EF5 /* Main.storyboard */,
 				184395381D196F3600BD7EF5 /* Assets.xcassets */,
 				1843953A1D196F3600BD7EF5 /* LaunchScreen.storyboard */,
@@ -79,6 +104,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		80418DF14CF3D6055CCE39C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				864167C960A6605A92EE8899 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4D3ED5A9F502AB733C5C615 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18841AA4789A1E53C1F20DF0 /* Pods.debug.xcconfig */,
+				565999ED849756369A79E785 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184395401D196F3600BD7EF5 /* Build configuration list for PBXNativeTarget "FMDB" */;
 			buildPhases = (
+				9318E27D5842216BE780B7BE /* Check Pods Manifest.lock */,
 				184395251D196F3600BD7EF5 /* Sources */,
 				184395261D196F3600BD7EF5 /* Frameworks */,
 				184395271D196F3600BD7EF5 /* Resources */,
+				803BA735ECECC78FF7735037 /* Embed Pods Frameworks */,
+				DB3096304F9C026520EA0485 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1843953C1D196F3600BD7EF5 /* LaunchScreen.storyboard in Resources */,
+				1843954B1D19772400BD7EF5 /* jxedt_user.db in Resources */,
 				184395391D196F3600BD7EF5 /* Assets.xcassets in Resources */,
 				184395371D196F3600BD7EF5 /* Main.storyboard in Resources */,
 			);
@@ -144,14 +190,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		803BA735ECECC78FF7735037 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9318E27D5842216BE780B7BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB3096304F9C026520EA0485 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		184395251D196F3600BD7EF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1843954E1D1977DF00BD7EF5 /* TestQuestions.m in Sources */,
 				184395341D196F3600BD7EF5 /* ViewController.m in Sources */,
 				184395311D196F3600BD7EF5 /* AppDelegate.m in Sources */,
+				184395551D1981CA00BD7EF5 /* NSObject+sqlite.m in Sources */,
 				1843952E1D196F3600BD7EF5 /* main.m in Sources */,
+				184395461D196F8100BD7EF5 /* SqliteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +358,7 @@
 		};
 		184395411D196F3600BD7EF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18841AA4789A1E53C1F20DF0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FMDB/Info.plist;
@@ -272,6 +370,7 @@
 		};
 		184395421D196F3600BD7EF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565999ED849756369A79E785 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FMDB/Info.plist;
@@ -300,6 +399,7 @@
 				184395421D196F3600BD7EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

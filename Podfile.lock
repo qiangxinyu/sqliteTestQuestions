@@ -1,0 +1,17 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - YYKit (1.0.6):
+    - YYKit/no-arc (= 1.0.6)
+  - YYKit/no-arc (1.0.6)
+
+DEPENDENCIES:
+  - FMDB
+  - YYKit
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  YYKit: a80c77ab7be226ebe539ef1495dfc25d5766d61e
+
+COCOAPODS: 0.39.0
